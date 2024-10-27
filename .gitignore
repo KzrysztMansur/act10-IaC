@@ -1,0 +1,12 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore Terraform files
+.terraform/
+
+# Ignore PEM files
+PemFiles/
+
+terraform.tfstate
+terraform.tfstate.1729992414.backup
+terraform.tfstate.backup

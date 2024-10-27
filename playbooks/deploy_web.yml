@@ -1,0 +1,12 @@
+- name: Deploy web on the windoes server
+  hosts: windows
+  tasks:
+    - name: Install IIS
+      win_feature:
+        name: Web-Server
+        state: present
+
+    - name: Copy custom HTML file
+      win_copy:
+        src: ../webfiles/index.html
+        dest: C:\inetpub\wwwroot\index.html
